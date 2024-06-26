@@ -288,7 +288,6 @@ body.dark .my-image {
     align-items: center;
     gap: 25px;
     border-radius: 10px;
-
 }
 
 .expertise-left img {
@@ -515,7 +514,8 @@ body.dark .aboutme-content .about-img {
 }
 
 .progress-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -1287,7 +1287,7 @@ body.dark .personl-container .image {
 .proffessional ul li {
     font-size: 1.2rem;
     color: var(--text-color-gray);
-    width: 900px;
+    max-width: 900px;
     margin-bottom: 15px;
 }
 
@@ -1311,7 +1311,7 @@ body.dark .personl-container .image {
 .Work ul li {
     font-size: 1.2rem;
     color: var(--text-color-gray);
-    width: 900px;
+    max-width: 900px;
     margin-bottom: 15px;
 }
 
@@ -1650,7 +1650,7 @@ body.dark .personl-container .image {
         font-size: 1.6rem;
     }
 
-    .mobile-navbar .mobile-nav .nav-icon.active{
+    .mobile-navbar .mobile-nav .nav-icon.active {
         width: 70px;
         height: 50px;
         background: var(--secondary-color);
@@ -1829,4 +1829,302 @@ body.dark .personl-container .image {
     .my-cv {
         margin-top: 50px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home_content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-image {
+        background: url(img/my\ main-image.svg);
+        background-size: cover;
+        margin-left: -50px;
+        margin-bottom: 50px;
+        transition: var(--trans-03);
+    }
+
+    body.dark .my-image {
+        background: url(img/my\ main-image-dark.svg);
+        background-size: cover;
+        margin-left: -50px;
+        margin-bottom: 50px;
+        transition: var(--trans-03);
+    }
+
+    /* start my experties */
+    .expertise h1 {
+        margin-top: 50px;
+    }
+
+    .expertise_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .expertise_card {
+        width: 350px;
+    }
+
+    /* === about me section === */
+    .about_me {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .about_me .aboutme-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .about-text h1 {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .about-text h1::before {
+        display: none;
+    }
+
+    /* === skill progress section ===  */
+    .progress-card {
+        width: 170px;
+    }
+
+    .progress-container h1::before {
+        display: none;
+    }
+
+    .progress-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    /* === projects section === */
+    .projects {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .project-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        margin-top: 90px;
+    }
+
+    .projects h1::before {
+        display: none;
+    }
+
+    /* === get in touch section === */
+    .get-in-touch {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .get-in-touch-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    /* get in touch left side */
+    .contact-left h1 {
+        text-align: center;
+    }
+
+    .contact-left h1::before {
+        display: none !important;
+    }
+
+    .contact-left p {
+        width: 300px;
+        text-align: justify;
+    }
+
+    /* === download resume section === */
+    .download-resume {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    /* download resume right side */
+    .download-right p {
+        width: 310px;
+    }
+
+    .download-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 50px;
+    }
+
+    /* download resume left side */
+    .download-left img {
+        width: 350px;
+        height: 350px;
+    }
+
+    /* download resume right side */
+    .download-right {
+        margin-top: 0px;
+    }
+
+    .download-right h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .download-right h1::before {
+        display: none;
+    }
+
+    .download-right p {
+        width: 330px;
+        text-align: justify;
+    }
+
+    .download-right .buttons {
+        margin-top: 40px;
+    }
+
+    /* === footer section === */
+    .footer .footer-content .pages {
+        display: flex;
+        gap: 70px;
+    }
+
+    .footer .footer-content .social-media {
+        display: flex;
+        gap: 30px;
+    }
+
+    /* <======= start projects page =======> */
+    .project-container .sort-buttons {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-left: 0px;
+    }
+
+    .project-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        gap: 30px;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+
+    /* <===== start resume page ======> */
+    /* personal info */
+    .prersonal-info table tr th {
+        width: 500px !important;
+    }
+
+    .prersonal-info table tr {
+        height: 40px;
+    }
+
+    .personl-container .image {
+        display: none;
+    }
+
+    body.dark .personl-container .image {
+        display: none;
+    }
+
+    /* educational qualification */
+    .ol h3 {
+        text-align: center;
+    }
+
+    .ol table {
+        width: 370px;
+    }
+
+    .al h3 {
+        text-align: center;
+    }
+
+    .al table {
+        width: 370px;
+    }
+
+    /* proffessional qualification */
+    .proffessional ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proffessional ul li {
+        font-size: 1rem;
+        width: 350px;
+    }
+
+    /* work experience */
+    .Work ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Work ul li {
+        font-size: 1rem;
+        color: var(--text-color-gray);
+        width: 350px;
+        margin-bottom: 15px;
+    }
+
+    /* end WORK EXPERIENCE area */
+    .my-cv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-cv iframe {
+        width: 370px;
+        height: 550px;
+    }
+
+
 }
