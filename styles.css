@@ -189,6 +189,11 @@ body.dark .sun-moon .moon {
     opacity: 0;
 }
 
+/* mobile / tab navbar  */
+.mobile-navbar {
+    display: none;
+}
+
 /* end side bar */
 
 /* === start home section === */
@@ -302,6 +307,7 @@ body.dark .my-image {
     font-size: 0.8rem;
     color: var(--text-color-gray);
 }
+
 /* end my experties */
 
 /* scroll animation */
@@ -325,6 +331,7 @@ body.dark .my-image {
         transition: none;
     }
 }
+
 /* end home section */
 
 /* start about me section */
@@ -402,6 +409,7 @@ body.dark .aboutme-content .about-img {
     width: 670px;
     margin-top: 20px;
     font-size: 0.9rem;
+    max-width: 600px;
     color: var(--text-color-gray);
 }
 
@@ -523,9 +531,9 @@ body.dark .aboutme-content .about-img {
     justify-content: center;
 }
 
-.percent{
-	width:120px;
-	height:120px;
+.percent {
+    width: 120px;
+    height: 120px;
 }
 
 .percent p {
@@ -535,8 +543,8 @@ body.dark .aboutme-content .about-img {
     margin-bottom: 5px;
 }
 
-.percent svg{
-	stroke-linecap:round;
+.percent svg {
+    stroke-linecap: round;
 }
 
 .desc p {
@@ -545,6 +553,7 @@ body.dark .aboutme-content .about-img {
     margin-top: 20px;
     font-weight: 600;
 }
+
 /* end skill progress section */
 
 /* start projects section */
@@ -959,6 +968,7 @@ body.dark .aboutme-content .about-img {
     font-weight: 500;
     font-size: 1.5rem;
 }
+
 /* <======= end home page =======> */
 
 /* <======= start projects page =======> */
@@ -995,7 +1005,6 @@ body.dark .aboutme-content .about-img {
 .project-container .sort-buttons .sort {
     position: relative;
     height: 30px;
-    border-radius: 8px;
     border: none;
     outline: none;
     background: transparent !important;
@@ -1108,9 +1117,10 @@ body.dark .aboutme-content .about-img {
     cursor: pointer;
     transition: var(--trans-02);
 }
+
 /* end projects page */
 
-/* start resume page */
+/* <===== start resume page ======> */
 .resume-container {
     position: relative;
     left: 250px;
@@ -1178,6 +1188,7 @@ body.dark .personl-container .image {
     margin-top: -90px;
     transition: all 0.6s;
 }
+
 /* end personal info area */
 
 /* start educational qualifications area */
@@ -1255,6 +1266,7 @@ body.dark .personl-container .image {
     font-weight: 500;
     padding: 15px;
 }
+
 /* end educational qulification area */
 
 /* PROFESSIONAL QUALIFICATIONS */
@@ -1278,6 +1290,7 @@ body.dark .personl-container .image {
     width: 900px;
     margin-bottom: 15px;
 }
+
 /* end PROFESSIONAL QUALIFICATIONS area */
 
 /* start WORK EXPERIENCE area */
@@ -1301,6 +1314,7 @@ body.dark .personl-container .image {
     width: 900px;
     margin-bottom: 15px;
 }
+
 /* end WORK EXPERIENCE area */
 
 .my-cv {
@@ -1330,4 +1344,489 @@ body.dark .personl-container .image {
     font-size: 1.2rem;
     font-weight: 500;
     margin-left: 10px;
+}
+
+/* ===== Responsive ====== */
+@media screen and (max-width: 1024px) {
+
+    /* === sidebar === */
+    .sidebar {
+        width: 210px;
+    }
+
+    /* === home section === */
+    .home {
+        position: relative;
+        left: 210px;
+        width: calc(100% - 210px);
+    }
+
+    .home_content {
+        display: flex;
+        gap: 10px;
+    }
+
+    .main-heading h1 {
+        font-size: 3.5rem;
+        width: 300px;
+    }
+
+    .main-heading p {
+        font-size: 0.9rem;
+    }
+
+    .my-image {
+        width: 400px;
+        height: 400px;
+    }
+
+    body.dark .my-image {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* === start my experties === */
+    .expertise_cards {
+        display: flex;
+        margin-top: 30px;
+        gap: 50px;
+    }
+
+    /* === about me section === */
+    .about_me {
+        position: relative;
+        left: 210px;
+        width: calc(100% - 210px);
+    }
+
+    .aboutme-content .about-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    body.dark .aboutme-content .about-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .aboutme-content .about-text p {
+        max-width: 300px;
+    }
+
+    .aboutme-content .about-text p span {
+        display: none;
+    }
+
+    /* === skill progress section ===  */
+    .pogress-bar {
+        position: relative;
+        left: 210px;
+        width: calc(100% - 210px);
+    }
+
+    .progress-card {
+        width: 170px;
+    }
+
+    /* === projects section === */
+    .projects {
+        position: relative;
+        left: 210px;
+        width: calc(100% - 210px);
+    }
+
+    .project-content {
+        display: flex;
+        gap: 10px;
+    }
+
+    .projects-card {
+        width: 230px;
+        height: 360px;
+    }
+
+    .projects-card img {
+        width: 210px;
+    }
+
+    .projects-card .project-name {
+        text-align: center;
+    }
+
+    /* === get in touch section === */
+    .get-in-touch {
+        position: relative;
+        left: 210px;
+        width: calc(100% - 210px);
+    }
+
+    .get-in-touch-container {
+        gap: 50px;
+    }
+
+    .contact-left p {
+        width: 350px;
+    }
+
+    /* === download resume section === */
+    .download-resume {
+        position: relative;
+        left: 210px;
+        width: calc(100% - 210px);
+    }
+
+    .download-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* download resume left side */
+    .download-left img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* download resume right side */
+    .download-right h1::before {
+        content: 'Download My Resume';
+        position: absolute;
+        width: 400px;
+    }
+
+    .download-right p {
+        width: 350px;
+    }
+
+    /* === footer section === */
+    .footer {
+        position: relative;
+        left: 210px;
+        width: calc(100% - 210px);
+    }
+
+    /* <======= start projects page =======> */
+    .project-container {
+        position: relative;
+        left: 210px;
+        width: calc(100% - 210px);
+    }
+
+    .project-container .sort-buttons {
+        margin-left: 20px;
+    }
+
+    .project-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* <===== start resume page ======> */
+    .resume-container {
+        position: relative;
+        left: 210px;
+        width: calc(100% - 210px);
+    }
+
+    .resume-container h1 {
+        font-size: 1.5rem;
+    }
+
+    /* start personal info area */
+    .prersonal-info h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 13px;
+        width: 350px;
+        text-align: left;
+        padding-left: 90px;
+    }
+
+    .prersonal-info table {
+        width: 550px;
+        margin-left: -30px;
+    }
+
+    .personl-container .image {
+        background: url(img/about-image.svg);
+        background-size: cover;
+        width: 350px;
+        height: 350px;
+    }
+
+    body.dark .personl-container .image {
+        background: url(img/about-image-dark.svg);
+        background-size: cover;
+        width: 350px;
+        height: 350px;
+    }
+
+    /* end personal info area */
+
+    /* start educational qualifications area */
+    .educational h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 13px;
+        width: 430px;
+    }
+
+    .exams {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* end educational qulification area */
+
+    /* PROFESSIONAL QUALIFICATIONS */
+    .proffessional h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 13px;
+        width: 430px;
+        padding-left: 90px;
+    }
+
+    .proffessional ul li {
+        font-size: 1rem;
+        width: 700px;
+    }
+
+    /* end PROFESSIONAL QUALIFICATIONS area */
+
+    /* start WORK EXPERIENCE area */
+    .Work h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 13px;
+        width: 430px;
+        padding-left: 90px;
+    }
+
+    .Work ul li {
+        font-size: 1rem;
+        width: 700px;
+    }
+
+    /* end WORK EXPERIENCE area */
+
+    .my-cv {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+
+    .mobile-navbar .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        padding: 30px;
+        background-color: var(--sidebar-color);
+        width: 100%;
+        height: 90px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .mobile-navbar .mobile-nav .nav-link {
+        cursor: pointer;
+    }
+
+    .mobile-navbar .mobile-nav .nav-link .icon {
+        font-size: 1.6rem;
+    }
+
+    .mobile-navbar .mobile-nav .nav-icon.active{
+        width: 70px;
+        height: 50px;
+        background: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding-left: 8px;
+    }
+
+    .mobile-navbar .mobile-nav .nav-icon.active .icon {
+        color: #fff;
+    }
+
+    .home {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .home_content {
+        display: flex;
+        gap: 10px;
+        margin-left: 20px;
+    }
+
+    /* === about me section === */
+    .about_me {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    /* === skill progress section ===  */
+    .pogress-bar {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .progress-card {
+        width: 150px;
+    }
+
+    /* === projects section === */
+    .projects {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .project-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin-top: 90px;
+    }
+
+    .projects-card {
+        width: 250px;
+        height: 360px;
+    }
+
+    .projects-card img {
+        width: 230px;
+    }
+
+    /* === get in touch section === */
+    .get-in-touch {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .contact-left p {
+        width: 300px;
+    }
+
+    /* === download resume section === */
+    .download-resume {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    /* download resume right side */
+    .download-right p {
+        width: 310px;
+    }
+
+    /* === footer section === */
+    .footer {
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    /* <======= start projects page =======> */
+    .project-container {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    /* <===== start resume page ======> */
+    .resume-container {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .resume-container h1 {
+        font-size: 1.5rem;
+    }
+
+    /* start personal info area */
+    .prersonal-info h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 13px;
+        width: 350px;
+        text-align: left;
+        padding-left: 90px;
+    }
+
+    .prersonal-info table {
+        width: 400px;
+        margin-left: 20px;
+    }
+
+    /* end personal info area */
+
+    /* start educational qualifications area */
+    .educational h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 13px;
+        width: 430px;
+    }
+
+    /* end educational qulification area */
+
+    /* PROFESSIONAL QUALIFICATIONS */
+    .proffessional h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 13px;
+        width: 430px;
+        padding-left: 90px;
+    }
+
+    .proffessional ul li {
+        font-size: 1rem;
+        width: 650px;
+    }
+
+    /* end PROFESSIONAL QUALIFICATIONS area */
+
+    /* start WORK EXPERIENCE area */
+    .Work h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 13px;
+        width: 430px;
+        padding-left: 90px;
+    }
+
+    .Work ul li {
+        font-size: 1rem;
+        width: 650px;
+    }
+
+    /* end WORK EXPERIENCE area */
+
+    .my-cv {
+        margin-top: 50px;
+    }
 }

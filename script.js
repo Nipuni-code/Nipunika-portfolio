@@ -1,7 +1,8 @@
 const body = document.querySelector("body"),
       modeNav = body.querySelector('.mode-nav'),
       mode = body.querySelector('.mode'),
-      modeText = body.querySelector('.mode-text');
+      modeText = body.querySelector('.mode-text'),
+      modeBar = body.querySelector('.mode-bar');
 
 
     //   navlinks onclick action 
@@ -97,7 +98,7 @@ const body = document.querySelector("body"),
     };
 
     
-      // change mode 
+      // change mode for desktop/laptop devices
     //   get item local storage
     if (localStorage.getItem('nightMode') == 'true') {
         body.classList.add('dark');
@@ -113,6 +114,21 @@ const body = document.querySelector("body"),
         } else {
             modeText.innerText = 'Dark Mode';
         }
+
+        // set item local storage 
+        localStorage.setItem('nightMode', body.classList.contains('dark'));
+    });
+
+
+      // change mode for mobile/tab devices
+    //   get item local storage
+    if (localStorage.getItem('nightMode') == 'true') {
+        body.classList.add('dark');
+    }
+
+    // change mode class 
+    modeBar.addEventListener('click', () => {
+        body.classList.toggle('dark');
 
         // set item local storage 
         localStorage.setItem('nightMode', body.classList.contains('dark'));

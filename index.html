@@ -24,7 +24,7 @@
             </a>
         </header>
 
-        <!-- navigation bar -->
+        <!-- navigation bar ( desktop/ laptop size ) -->
          <!-- pages navbar -->
         <ul class="nav-first navbar left-hidden">
             <!-- home navbar -->
@@ -83,6 +83,41 @@
         </ul>
         <!-- end mode navbar -->
     </nav>
+
+    <!-- navigation bar ( tab/ mobile size ) -->
+     <div class="mobile-navbar">
+        <ul class="mobile-nav left-hidden">
+            <!-- home navbar -->
+            <li class="nav-link" onclick="home()">
+                <div class="nav-icon active">
+                    <i class="ri-home-line icon"></i>
+                </div>
+            </li>
+    
+            <!-- projects navbar -->
+            <li class="nav-link" onclick="projects()">
+                <div class="nav-icon">
+                    <i class="ri-folder-5-line icon"></i>
+                </div>
+            </li>
+    
+            <!-- Resume navbar -->
+            <li class="nav-link" onclick="resume()">
+                <div class="nav-icon">
+                    <i class="ri-profile-line icon"></i>
+                </div>
+            </li>
+
+            <li class="nav-link mode-bar">
+                <div class="sun-moon">
+                    <i class="ri-sun-line icon sun"></i>
+                    <i class="ri-moon-line icon moon"></i>
+                </div>
+            </li>
+        </ul>
+     </div>
+
+
     <!-- end navigation section / end sidebar  -->
 
     <!-- right side home section -->
@@ -154,7 +189,8 @@
                     to build functional, efficient, and innovative web applications.
                     <br>
                     <br>
-                    In addition to my technical skills, I am committed to staying current with the latest trends and
+                    <span>
+                        In addition to my technical skills, I am committed to staying current with the latest trends and
                     technologies in the ever-evolving world of web design and development. I enjoy exploring new tools,
                     frameworks, and techniques to enhance my projects and provide the best user experiences possible.
                     <br>
@@ -163,6 +199,7 @@
                     thrive in environments where I can collaborate with others, share knowledge, and contribute to
                     exciting and meaningful projects. My goal is to leverage my skills and passion to make a positive
                     impact in the digital world.
+                    </span>
                 </p>
                 <!-- buttons -->
                 <div class="buttons">
@@ -355,10 +392,10 @@
 
                     <!-- social media -->
                 <ul class="social-media">
-                    <li class="left-hidden"><a href=""><i class="ri-facebook-fill"></i></a></li>
-                    <li class="left-hidden"><a href=""><i class="ri-whatsapp-line"></i></a></li>
-                    <li class="left-hidden"><a href=""><i class="ri-telegram-2-line"></i></a></li>
-                    <li class="left-hidden"><a href=""><i class="ri-github-fill"></i></a></li>
+                    <li class="left-hidden"><a href="https://www.facebook.com/profile.php?id=61554160661089&mibextid=ZbWKwL" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                    <li class="left-hidden"><a href="https://wa.me/qr/EBVQBO4M4ONJH1" target="_blank"><i class="ri-whatsapp-line"></i></a></li>
+                    <li class="left-hidden"><a href="https://t.me/nipunikaweeravansha" target="_blank"><i class="ri-telegram-2-line"></i></a></li>
+                    <li class="left-hidden"><a href="https://github.com/Nipuni-code" target="_blank"><i class="ri-github-fill"></i></a></li>
                 </ul>
             </div>
 
@@ -407,7 +444,7 @@
                     <button type="button" class="download left-hidden" onclick="document.getElementById('link').click()">Download <i
                             class="ri-arrow-down-line"></i></button>
                             <a id="link" href="img/Nipunika Weeravansha.pdf" download hidden></a>
-                    <button type="button" class="view left-hidden" onclick="projects()">View <i class="ri-arrow-right-line"></i></button>
+                    <button type="button" class="view left-hidden" onclick="viewResume()">View <i class="ri-arrow-right-line"></i></button>
                 </div>
             </div>
         </div>
@@ -425,16 +462,16 @@
         <div class="footer-content">
             <hr>
             <ul class="pages">
-                <li class="left-hidden"><a href="#">Home</a></li>
-                <li class="left-hidden"><a href="#">Projects</a></li>
-                <li class="left-hidden"><a href="#">Resume</a></li>
+                <li class="left-hidden"><a href="index.html">Home</a></li>
+                <li class="left-hidden"><a href="projects.html">Projects</a></li>
+                <li class="left-hidden"><a href="resume.html">Resume</a></li>
             </ul>
 
             <ul class="social-media">
-                <li class="left-hidden"><a href="#"><i class="ri-facebook-fill"></i></a></li>
-                <li class="left-hidden"><a href="#"><i class="ri-whatsapp-line"></i></a></li>
-                <li class="left-hidden"><a href="#"><i class="ri-telegram-2-line"></i></a></li>
-                <li class="left-hidden"><a href="#"><i class="ri-github-fill"></i></a></li>
+                <li class="left-hidden"><a href="https://www.facebook.com/profile.php?id=61554160661089&mibextid=ZbWKwL" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                <li class="left-hidden"><a href="https://wa.me/qr/EBVQBO4M4ONJH1" target="_blank"><i class="ri-whatsapp-line"></i></a></li>
+                <li class="left-hidden"><a href="https://t.me/nipunikaweeravansha" target="_blank"><i class="ri-telegram-2-line"></i></a></li>
+                <li class="left-hidden"><a href="https://github.com/Nipuni-code" target="_blank"><i class="ri-github-fill"></i></a></li>
             </ul>
         </div>
     </section>
