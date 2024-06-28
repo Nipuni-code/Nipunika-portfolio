@@ -47,56 +47,6 @@ const body = document.querySelector("body"),
         window.open('img/Nipunika Weeravansha.pdf', '_blank');
     };
     
-
-    // project page project view button
-    function prj1() {
-        window.open('https://homestudiorecords01.netlify.app/', '_blank');
-    };
-
-    function prj2() {
-        window.open('https://beatupp.netlify.app/#', '_blank');
-    };
-
-    function prj3() {
-        window.open('https://bytebrainlk.netlify.app/', '_blank');
-    };
-
-    function prj4() {
-        window.open('img/flower-shop.pdf', '_blank');
-    };
-
-    function prj5() {
-        window.open('img/coffee-shop.pdf', '_blank');
-    };
-
-    function prj6() {
-        window.open('img/juice-bar.pdf', '_blank');
-    };
-
-    function prj7() {
-        window.open('img/drama-hub.pdf', '_blank');
-    };
-
-    function prj8() {
-        window.open('img/cake-hub.pdf', '_blank');
-    };
-
-    function prj9() {
-        window.open('img/education.pdf', '_blank');
-    };
-
-    function prj10() {
-        window.open('img/rainbow.svg', '_blank');
-    };
-
-    function prj11() {
-        window.open('img/furry letter.svg', '_blank');
-    };
-
-    function prj12() {
-        window.open('img/furry background.svg', '_blank');
-    };
-
     
       // change mode for desktop/laptop devices
     //   get item local storage

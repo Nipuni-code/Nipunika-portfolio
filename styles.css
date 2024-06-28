@@ -1081,6 +1081,8 @@ body.dark .aboutme-content .about-img {
 
 .project-card .project-image img {
     width: 235px;
+    height: 130px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -1116,6 +1118,10 @@ body.dark .aboutme-content .about-img {
     font-weight: 600;
     cursor: pointer;
     transition: var(--trans-02);
+}
+
+.project-info button a {
+    color: #fff;
 }
 
 /* end projects page */
