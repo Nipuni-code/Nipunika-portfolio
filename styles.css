@@ -1341,7 +1341,7 @@ body.dark .personl-container .image {
     border-radius: 5px;
     margin-top: 50px;
     cursor: pointer;
-    transition: 0.5s ease
+    transition: 0.5s ease;
 }
 
 .resume-container .download-btn-cv:hover {
